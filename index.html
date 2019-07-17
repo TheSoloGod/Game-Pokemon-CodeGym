@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Chaper-1</title>
+</head>
+<body onload="doReady()">
+    <canvas id="myCanvas" width="1350px" height="600px" style="border: 1px solid #000000"></canvas>
+    <img src="img/background-login.png" id="background-login" style="display: none">
+    <img src="img/background-guide.png" id="background-guide" style="display: none">
+    <img src="img/background-coming-soon.png" id="background-coming-soon" style="display: none">
+
+    <img src="img/background-town.png" id="background-town" style="display: none">
+    <img src="img/background-town-extension.png" id="background-town-extension" style="display: none">
+
+    <img src="img/background-bag.png" id="background-bag" style="display: none">
+    <img src="img/background-mountain.png" id="background-mountain" style="display: none">
+    <img src="img/background-river.png" id="background-river" style="display: none">
+    <img src="img/background-jungle.png" id="background-jungle" style="display: none">
+
+    <img src="img/pikachu.png" id="pikachu" style="display: none">
+    <img src="img/pikachu-logo.png" id="pikachu-logo" style="display: none">
+    <img src="img/pikachu-name.png" id="pikachu-name" style="display: none">
+    <img src="img/pokeball-pikachu.png" id="pokeball-pikachu" style="display: none">
+
+    <img src="img/raichu.png" id="raichu" style="display: none">
+    <img src="img/raichu-logo.png" id="raichu-logo" style="display: none">
+    <img src="img/raichu-name.png" id="raichu-name" style="display: none">
+    <img src="img/raichu.png" id="raichu-pikachu" style="display: none">
+
+    <img src="img/charizard.png" id="charizard" style="display: none">
+    <img src="img/charizard-logo.png" id="charizard-logo" style="display: none">
+    <img src="img/charizard-name.png" id="charizard-name" style="display: none">
+    <img src="img/pokeball-charizard.png" id="pokeball-charizard" style="display: none">
+
+    <img src="img/blastoise.png" id="blastoise" style="display: none">
+    <img src="img/blastoise-logo.png" id="blastoise-logo" style="display: none">
+    <img src="img/blastoise-name.png" id="blastoise-name" style="display: none">
+    <img src="img/pokeball-blastoise.png" id="pokeball-blastoise" style="display: none">
+
+    <img src="img/venusaur.png" id="venusaur" style="display: none">
+    <img src="img/venusaur-logo.png" id="venusaur-logo" style="display: none">
+    <img src="img/venusaur-name.png" id="venusaur-name" style="display: none">
+    <img src="img/pokeball-venusaur.png" id="pokeball-venusaur" style="display: none">
+
+    <img src="img/charmander.png" id="charmander" style="display: none">
+    <img src="img/charmander-logo.png" id="charmander-logo" style="display: none">
+    <img src="img/charmander-name.png" id="charmander-name" style="display: none">
+    <img src="img/pokeball-charmander.png" id="pokeball-charmander" style="display: none">
+
+    <img src="img/bulbasaur.png" id="bulbasaur" style="display: none"/>
+    <img src="img/bulbasaur-logo.png" id="bulbasaur-logo" style="display: none">
+    <img src="img/bulbasaur-name.png" id="bulbasaur-name" style="display: none">
+    <img src="img/pokeball-bulbasaur.png" id="pokeball-bulbasaur" style="display: none">
+
+    <img src="img/squirtle.png" id="squirtle" style="display: none"/>
+    <img src="img/squirtle-logo.png" id="squirtle-logo" style="display: none">
+    <img src="img/squirtle-name.png" id="squirtle-name" style="display: none">
+    <img src="img/pokeball-squirtle.png" id="pokeball-squirtle" style="display: none">
+
+    <img src="img/butterfree.png" id="butterfree" style="display: none"/>
+    <img src="img/butterfree-logo.png" id="butterfree-logo" style="display: none">
+    <img src="img/butterfree-name.png" id="butterfree-name" style="display: none">
+    <img src="img/pokeball-butterfree.png" id="pokeball-butterfree" style="display: none">
+
+    <img src="img/eevee.png" id="eevee" style="display: none"/>
+    <img src="img/eevee-logo.png" id="eevee-logo" style="display: none">
+    <img src="img/eevee-name.png" id="eevee-name" style="display: none">
+    <img src="img/pokeball-eevee.png" id="pokeball-eevee" style="display: none">
+
+    <img src="img/nidorino.png" id="nidorino" style="display: none"/>
+    <img src="img/nidorino-logo.png" id="nidorino-logo" style="display: none">
+    <img src="img/nidorino-name.png" id="nidorino-name" style="display: none">
+    <img src="img/pokeball-nidorino.png" id="pokeball-nidorino" style="display: none">
+
+    <img src="img/lapras.png" id="lapras" style="display: none"/>
+    <img src="img/lapras-logo.png" id="lapras-logo" style="display: none">
+    <img src="img/lapras-name.png" id="lapras-name" style="display: none">
+    <img src="img/pokeball-lapras.png" id="pokeball-lapras" style="display: none">
+
+    <img src="img/machamp.png" id="machamp" style="display: none"/>
+    <img src="img/machamp-logo.png" id="machamp-logo" style="display: none">
+    <img src="img/machamp-name.png" id="machamp-name" style="display: none">
+    <img src="img/pokeball-machamp.png" id="pokeball-machamp" style="display: none">
+
+    <img src="img/koffing.png" id="koffing" style="display: none"/>
+    <img src="img/koffing-logo.png" id="koffing-logo" style="display: none">
+    <img src="img/koffing-name.png" id="koffing-name" style="display: none">
+    <img src="img/pokeball-koffing.png" id="pokeball-koffing" style="display: none">
+
+    <img src="img/dragonite.png" id="dragonite" style="display: none"/>
+    <img src="img/dragonite-logo.png" id="dragonite-logo" style="display: none">
+    <img src="img/dragonite-name.png" id="dragonite-name" style="display: none">
+    <img src="img/pokeball-dragonite.png" id="pokeball-dragonite" style="display: none">
+
+    <img src="img/gyarados.png" id="gyarados" style="display: none"/>
+    <img src="img/gyarados-logo.png" id="gyarados-logo" style="display: none">
+    <img src="img/gyarados-name.png" id="gyarados-name" style="display: none">
+    <img src="img/pokeball-gyarados.png" id="pokeball-gyarados" style="display: none">
+
+    <img src="img/magikarp.png" id="magikarp" style="display: none"/>
+    <img src="img/magikarp-logo.png" id="magikarp-logo" style="display: none">
+    <img src="img/magikarp-name.png" id="magikarp-name" style="display: none">
+    <img src="img/pokeball-magikarp.png" id="pokeball-magikarp" style="display: none">
+
+    <img src="img/pokeball.png" id="pokeball" style="display: none">
+    <img src="img/down1.png" id="trainer" style="display: none">
+    <img src="img/effect-thunder.png" id="thunder" style="display: none">
+    <div id="bag"></div>
+
+<!-- Toàn bộ phần ảnh có thể dùng load assets để không cần đưa vào thẻ HTML-->
+
+    <iframe src="sound/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="player" autoplay loop>
+        <source src="sound/pikachu.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="Canvas.js"></script>
+    <script src="Database.js"></script>
+    <script src="Function-random.js"></script>
+
+    <script src="Class-BackGround.js"></script>
+    <script src="Obj-backGround.js"></script>
+
+    <script src="Class-Trainer.js"></script>
+    <script src="Obj-trainer.js"></script>
+
+    <script src="Class-Pokemon.js"></script>
+    <script src="Obj-pokemon.js"></script>
+    <script src="Function-drawMyPokemon.js"></script>
+    <script src="Function-drawEnemyPokemon.js"></script>
+    <script src="Function-getPokemonByName.js"></script>
+
+    <script src="Class-BattleField.js"></script>
+    <script src="Obj-battleField.js"></script>
+    <script src="Function-getBattleFieldByPokemon.js"></script>
+
+    <script src="Class-PokemonPosition.js"></script>
+    <script src="Obj-pokemonPosition.js"></script>
+
+    <script src="Class-SpecialPosition.js"></script>
+    <script src="Obj-specialPosition.js"></script>
+
+    <script src="Class-Map.js"></script>
+    <script src="Obj-map.js"></script>
+
+    <script src="Function-toBattle.js"></script>
+
+    <script src="Function-moveSelection.js"></script>
+    <script src="Function-doReady.js"></script>
+</body>
+</html>

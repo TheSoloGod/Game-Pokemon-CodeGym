@@ -1,0 +1,1 @@
+let trainer = new Trainer(425, 250, "Ninja", 25, 1);
